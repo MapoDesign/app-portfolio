@@ -1,13 +1,15 @@
 
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from '../../views/Home/Home'
 import List from '../../views/List/List'
 import LogIn from '../../views/Login/Login'
 import Curriculum from '../../views/Curriculum/Curriculum'
+import NavBar from '../Header/NavBar/NavBar'
 
 
 export default function CustomRutes(){
-    return <Router >
+    return <BrowserRouter>
+        <NavBar/>
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/curriculum" element={<Curriculum />} />
@@ -15,5 +17,5 @@ export default function CustomRutes(){
             <Route path="/login" element={<LogIn />} />
             <Route path="*" element={<div>Not found</div>} />
         </Routes>
-    </Router>
+    </BrowserRouter>
 }
