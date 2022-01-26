@@ -16,7 +16,7 @@ function NavBar(){
             </NavDropdown>
             </Nav>
             <Nav>
-            <Nav.Link eventKey={2} yo="/login">
+            <Nav.Link eventKey={2} href="/login">
                 Log-in
             </Nav.Link>
             </Nav>
