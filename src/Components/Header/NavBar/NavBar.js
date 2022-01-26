@@ -7,7 +7,7 @@ function NavBar(){
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-            <Nav.Link href="/curriculum">About me</Nav.Link>
+            <Nav.Link to="/curriculum">About me</Nav.Link>
             <NavDropdown title="React" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/list">API REST | GET</NavDropdown.Item>
             </NavDropdown>
@@ -16,7 +16,7 @@ function NavBar(){
             </NavDropdown>
             </Nav>
             <Nav>
-            <Nav.Link eventKey={2} href="/login">
+            <Nav.Link eventKey={2} yo="/login">
                 Log-in
             </Nav.Link>
             </Nav>
