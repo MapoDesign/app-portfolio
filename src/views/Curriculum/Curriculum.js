@@ -1,5 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
-import SignUpForm from "../../Components/Form/signUpForm";
+import { Container, Row } from "react-bootstrap";
 import '../../Components/Products/ProductCard.css';
 
 export default function List(){

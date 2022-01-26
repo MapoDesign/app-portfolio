@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import useProductAPI from "../../Components/ClientAPI/useProductAPI"
 import ProductData from "../../Components/Products/ProductData";
 
@@ -28,44 +28,9 @@ export default function List(){
     productClient.fetchProduct("m")
   },arrayOfChanges)
 
-  const product ={
-    title: "Secchiello",
-    cost: {
-      amount: 10,
-      currency: "€"
-    }
-  }
   
-  const product2 ={
-    title: "Ombrello",
-    cost: {
-      amount: 6,
-      currency: "€"
-    }
-  }
-  const product3 ={
-    title: "Tazza",
-    cost: {
-      amount: 2,
-      currency: "€"
-    }
-  }
 
-  const products =[product,product2,product3]
-
-  const handleAddToCart =()=>{
-    setCounter(prev=> {
-      const newValue = prev + 1
-      if(newValue > 3){
-        alert("Hai superato il limite di prodotti")
-       return prev
-      }
-      return newValue
-    })
-  }
-  const handleRemovefromCart =()=>{
-    setCounter(prev=>prev-1)
-  }
+  
 
   if (productClient.loading) {
       return (

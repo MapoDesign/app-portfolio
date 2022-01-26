@@ -1,5 +1,4 @@
-import { Breadcrumb, Col, Container, Image, Row } from "react-bootstrap";
-import logo from '../../logo.svg';
+import { Container, Image, } from "react-bootstrap";
 import '../../App.css';
 
 export default function Home(){
