@@ -1,5 +1,5 @@
 
-import {BrowserRouter, Routes, Route } from 'react-router-dom'
+import {HashRouter, Routes, Route } from 'react-router-dom'
 import Home from '../../views/Home/Home'
 import List from '../../views/List/List'
 import LogIn from '../../views/Login/Login'
@@ -8,7 +8,7 @@ import NavBar from '../Header/NavBar/NavBar'
 
 
 export default function CustomRutes(){
-    return <BrowserRouter>
+    return <HashRouter>
         <NavBar/>
         <Routes>
             <Route path="/" element={<Home />} />
@@ -17,5 +17,5 @@ export default function CustomRutes(){
             <Route path="/login" element={<LogIn />} />
             <Route path="*" element={<div>Not found</div>} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
 }
