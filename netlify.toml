@@ -1,5 +1,0 @@
-# Redirects from what the browser requests to what we serve
-/views/Home/Home    /
-/views/List/List    /list
-/views/Login/LogIn  /login
-/views/Curriculum/Curriculum /curriculum

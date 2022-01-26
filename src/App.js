@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
      
-      <BrowserRouter />
+      <BrowserRouter basename = 'https://mapodesign-portfolio.netlify.app'/>
     </div>
   );
 }
