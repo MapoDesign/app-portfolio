@@ -1,32 +1,29 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import useProductAPI from "../../Components/ClientAPI/useProductAPI"
 import ProductData from "../../Components/Products/ProductData";
 
 
 export default function List(){
-    const[counter,setCounter] = useState(0)
+    //const[counter,setCounter] = useState(0)
   // Versione nuova
   const productClient = useProductAPI()
 
-  console.log(productClient.data)
-  const errorObject = {
-    message: "Sono un errore"
-  }
+  //console.log(productClient.data)
+  //const errorObject = {
+  //  message: "Sono un errore"
+  //}
   // Veccchia 
-  const cocktailQuery = {
-    isLoading: false,
-    isError: false,
-    error: errorObject,
-    data: ["a"]
-  }
+  //const cocktailQuery = {
+  //  isLoading: false,
+  //  isError: false,
+  //  error: errorObject,
+  //  data: ["a"]
+  //}
 
-  // Dipendenze dello useEffect
-  const arrayOfChanges = [] // Vengo eseguito al montaggio del componente (solo una volta)
+  
 
-  useEffect(()=>{
-    productClient.fetchProduct("m")
-  },arrayOfChanges)
+  useEffect(()=>{productClient.fetchProduct("m")},[]);
 
   
 

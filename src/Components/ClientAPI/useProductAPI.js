@@ -6,7 +6,7 @@ function useProductAPI(){
     const [data,setData] = useState(undefined);
     const [error,setError] = useState(undefined);
 
-    const fetchProduct = async(name) => {
+    let fetchProduct = async(name) => {
         try {
             setLoading(true)
             setError(undefined)
