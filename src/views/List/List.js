@@ -1,15 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import useProductAPI from "../../Components/ClientAPI/useProductAPI"
 import ProductData from "../../Components/Products/ProductData";
 
-
 export default function List(){
     //const[counter,setCounter] = useState(0)
   // Versione nuova
-  const productClient = useProductAPI()
+  const productClient = useProductAPI();
 
-  //console.log(productClient.data)
+  console.log(productClient.data)
   //const errorObject = {
   //  message: "Sono un errore"
   //}
@@ -25,7 +24,11 @@ export default function List(){
 
   useEffect(()=>{productClient.fetchProduct("m")},[]);
 
-  
+  //useEffect(() => {
+  //  axios.get('https://www.thecocktaildb.com/api/json/v1/1/search.php').then((response) => {
+  //    setData(response.data.drink); 
+  //  });
+  //}, []);
 
   
 
