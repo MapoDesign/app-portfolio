@@ -1,7 +1,7 @@
-//import { useEffect } from "react";
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import useProductAPI from "../../Components/ClientAPI/useProductAPI"
-//import ProductData from "../../Components/Products/ProductData";
+import ProductData from "../../Components/Products/ProductData";
 
 
 export default function List(){
@@ -23,7 +23,7 @@ export default function List(){
 
   
 
-  //useEffect(()=>{productClient.fetchProduct("m")},[]);
+  useEffect(()=>{productClient.fetchProduct("m")},[]);
 
   
 
@@ -63,7 +63,7 @@ export default function List(){
         
         <div className="flex">
           {/* Parte vecchia */}
-        {/*
+        {
           productClient.data.map((drink, index)=>{
             return <ProductData
               key={index}
@@ -71,15 +71,15 @@ export default function List(){
               src={drink.strDrinkThumb}
               />
           })
-        */}
+        }
 
         {/* Parte nuova */}
-        {productClient.data.map((drink, index)=>{
+        {/*productClient.data.map((drink, index)=>{
           return <div key={index}>
             {drink.strDrink}
             
           </div>
-        })}
+        })*/}
       </div>
             
     </Container>
