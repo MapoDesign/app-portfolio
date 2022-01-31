@@ -24,7 +24,7 @@ export default function List(){
   
 
   //useEffect(()=>{productClient.fetchProduct("m")},[]);
-  FetchProduct();
+ 
 
   //useEffect(() => {
   //  axios.get('https://www.thecocktaildb.com/api/json/v1/1/search.php').then((response) => {
