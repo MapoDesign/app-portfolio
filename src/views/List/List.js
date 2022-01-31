@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import FetchProduct from "../../Components/ClientAPI/FetchProduct";
 import { Col, Container, Row } from "react-bootstrap";
 import useProductAPI from "../../Components/ClientAPI/useProductAPI"
 import ProductData from "../../Components/Products/ProductData";
@@ -37,7 +35,7 @@ export default function List(){
   if (productClient.loading) {
       return (
       <div className="App">
-        <header className="App-header white">Loading</header>
+        <header className="App-header white">Cooming Soon</header>
       </div>
     )
   }
