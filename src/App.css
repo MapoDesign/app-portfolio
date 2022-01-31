@@ -1,3 +1,10 @@
+a{
+  text-decoration: none!important;
+}
+a:hover.sidebar{
+  color: #fff;
+}
+
 .App {
   text-align: center;
   color: #41464b;
@@ -34,6 +41,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.sidebar{
+  height:  150px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: slide-in-out 1.2s cubic-bezier(0.50, 0.46, 0.45, 0.94) both;
+  
+}
+
+@keyframes slide-in-out {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+#React{
+  background-color: #005190;
+}
+#JS{
+  background-color: #d5d8d1;
+}
+#WordPress{
+  background-color: #b32c57;
+}
+#eComm{
+  background-color: #aecbe8;
 }
 
 
