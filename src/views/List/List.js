@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import FetchProduct from "../../Components/ClientAPI/FetchProduct";
 import { Col, Container, Row } from "react-bootstrap";
 import useProductAPI from "../../Components/ClientAPI/useProductAPI"
 import ProductData from "../../Components/Products/ProductData";
