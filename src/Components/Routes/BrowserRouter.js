@@ -8,7 +8,7 @@ import NavBar from '../Header/NavBar/NavBar'
 
 
 export default function CustomRutes(){
-    return <BrowserRouter>
+    return <BrowserRouter >
         <NavBar/>
         <Routes>
             <Route path="/" element={<Home />} />
