@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import useProductAPI from "../../Components/ClientAPI/useProductAPI"
 import ProductData from "../../Components/Products/ProductData";
+import {useEffect} from "react";
 
 export default function List(){
     //const[counter,setCounter] = useState(0)
@@ -21,7 +22,7 @@ export default function List(){
 
   
 
-  //useEffect(()=>{productClient.fetchProduct("m")},[]);
+  useEffect(()=>{productClient.fetchProduct("m")},[]);
  
 
   //useEffect(() => {
