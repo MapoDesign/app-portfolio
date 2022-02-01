@@ -21,7 +21,6 @@ class News extends Component{
                     news: data.articles
                 })
             })
-            .catch((error) => console.log(error));
     }
     
     renderItems(){
