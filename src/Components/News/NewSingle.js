@@ -1,7 +1,8 @@
 const NewSingle = ({item}) => (
-    <li>
-        <p>{item.title}</p>
-    </li>
+    <ul><li>
+        <p>{item.article.title}</p>
+    </li></ul>
+            
 )
 
 export default NewSingle;

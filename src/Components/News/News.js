@@ -1,42 +1,25 @@
 
-import { Component } from 'react';
+import { useState, useEffect } from 'react';
 import NewSingle from './NewSingle';
+import axios from 'axios';
 
-class News extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            news: [],
+function News(){
+
+    const [data,setData] = useState([]);
+
+    async function getUser() {
+        try {
+          const response = await axios.get('https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=c0c5fcd80fb14c87b72c496cf4c87522');
+          console.log(response);
+          setData(response.data.articles);
+        } catch (error) {
+          console.error(error);
         }
-    }
+      }
 
-    componentDidMount(){
-        const url = 'https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=c0c5fcd80fb14c87b72c496cf4c87522'
-        fetch(url)
-            .then((response)=>{
-                return response.json();
-            })
-            .then((data) => {
-                this.setState({
-                    news: data.articles
-                })
-            })
-    }
-    
-    renderItems(){
-        return this.state.news.map((item)=>(
-            <NewSingle key={item.id} item={item} />
-        ));
-    } 
+      getUser();
 
-    render(){
-        return (
-        <ul>
-            {this.renderItems()}
-        </ul>
-    )
-    }
-
+      return <ul> {data.map(item => <li key={item.title}>{item.title}</li>)}</ul>
     
 }
 
