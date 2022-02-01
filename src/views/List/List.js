@@ -22,7 +22,7 @@ export default function List(){
 
   
 
-  useEffect(()=>{productClient.fetchProduct("m")},[]);
+  //useEffect(()=>{productClient.fetchProduct("m")},[]);
  
 
   //useEffect(() => {
