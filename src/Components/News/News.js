@@ -1,6 +1,5 @@
 
-import { useState, useEffect } from 'react';
-import NewSingle from './NewSingle';
+import { useState } from 'react';
 import axios from 'axios';
 
 function News(){
