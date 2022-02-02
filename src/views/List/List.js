@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import News from "../../Components/News/News";
 
+
 export default function List(){
    
     return <Container>    

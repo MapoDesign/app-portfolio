@@ -8,9 +8,9 @@ function News(){
 
     async function getUser() {
         try {
-          const response = await axios.get('https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=c0c5fcd80fb14c87b72c496cf4c87522');
+          const response = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a');
           
-          setData(response.data.articles);
+          setData(response.data.drinks);
         } catch (error) {
           console.error(error);
         }
@@ -18,7 +18,7 @@ function News(){
 
       getUser();
 
-      return <ul> {data.map(item => <li key={item.title}>{item.title}</li>)}</ul>
+      return <div className='flex'> {data.map(item => <div className='product-card'><p className='title'>{item.strDrink}</p><img src={item.strDrinkThumb} alt={item.strDrink} height="200" width="200" /></div>)}</div>
     
 }
 
