@@ -6,7 +6,7 @@ export default function List(){
    
     return <Container>    
         <Row>
-            <Col><h1>News list</h1></Col>
+            <Col><h1>Drinks list</h1></Col>
         </Row>
         <Row>
             <p>This list is made from a API Client with API REST/CRUDE method (GET).</p>
