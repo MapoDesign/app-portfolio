@@ -10,7 +10,7 @@ function NavBar(){
             <Nav.Link href="/curriculum">About me</Nav.Link>
             <NavDropdown title="React" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/list">DRINK API REST | GET</NavDropdown.Item>
-                <NavDropdown.Item href="https://react-api-album.netlify.app/">PHOTOS ALBUM API</NavDropdown.Item>
+                <NavDropdown.Item href="https://react-api-album.netlify.app/">PHOTO ALBUM API</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="JavaScript" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="https://mapodesign.github.io/libreria">Libreria</NavDropdown.Item>
