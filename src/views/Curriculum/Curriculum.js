@@ -6,7 +6,7 @@ export default function List(){
         <header id="slider" className="App-header">
             <div class="text-content">
                 <h3>Benvenuto! Io sono</h3>
-                <h1>Elisa Resmini</h1>
+                <h1>Front-end Developer</h1>
             </div>
         </header>
         <Container>
