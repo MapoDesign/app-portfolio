@@ -14,6 +14,7 @@ function NavBar(){
                 <NavDropdown.Item href="https://open-movies-database.netlify.app/">OPEN MOVIES API - working progress</NavDropdown.Item>
                 <NavDropdown.Item href="https://react-e-commerce-rayban.netlify.app/">RAYBAN E-COMMERCE - working progress </NavDropdown.Item>
                 <NavDropdown.Item href="https://react-users-github.netlify.app/">USERS API - working progress </NavDropdown.Item>
+                <NavDropdown.Item href="https://react-dark-mode-theme.netlify.app/">DARK MODE THEME</NavDropdown.Item>
             </NavDropdown>
             </Nav>
             <Nav>
