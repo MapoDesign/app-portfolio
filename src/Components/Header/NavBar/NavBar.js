@@ -13,6 +13,9 @@ function NavBar() {
               <NavDropdown.Item href="/list">
                 DRINK API REST | GET
               </NavDropdown.Item>
+              <NavDropdown.Item href="https://react-trip-lombardy.netlify.app/">
+                TRAVEL WITH API
+              </NavDropdown.Item>
               <NavDropdown.Item href="https://react-events-calendary.netlify.app/">
                 EVENTS
               </NavDropdown.Item>
