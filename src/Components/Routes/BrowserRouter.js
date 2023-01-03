@@ -10,6 +10,7 @@ export default function CustomRutes() {
   return (
     <BrowserRouter>
       <NavBar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/curriculum" element={<Curriculum />} />
