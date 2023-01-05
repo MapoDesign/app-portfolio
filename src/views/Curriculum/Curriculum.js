@@ -94,7 +94,6 @@ export default function List() {
         className="shadow-sm"
         style={{
           backgroundColor: "#f7f7f7",
-          borderBottom: "2px dotted #005190",
         }}
       >
         <Container>
