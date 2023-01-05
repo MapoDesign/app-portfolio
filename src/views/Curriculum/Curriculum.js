@@ -1,9 +1,97 @@
 import { Container, Row } from "react-bootstrap";
 import "../../Components/Products/ProductCard.css";
+import logo from "../../img/ElisaResmini.jpg";
 
 export default function List() {
   return (
     <>
+      <div style={{ backgroundColor: "#005190", color: "#ffffff" }}>
+        <Container>
+          <Row>
+            <div className="container-fluid py-5" id="about">
+              <div className="container">
+                <div className="position-relative d-flex align-items-center justify-content-center">
+                  {/*<h1
+                    className="display-1 text-uppercase"
+                    style={{
+                      textShadow: "0 0 5px #ffffff",
+                      color: "#113448",
+                    }}
+                  >
+                    About
+                  </h1>
+                  <h1 className="position-absolute text-uppercase text-primary">
+                    About Me
+                  </h1>*/}
+                </div>
+                <div className="row align-items-center">
+                  <div className="col-lg-3 pb-4 pb-lg-0">
+                    <img
+                      className="img-fluid rounded w-100"
+                      src={logo}
+                      alt=""
+                    />
+                  </div>
+                  <div className="col-lg-7">
+                    <h3 className="mb-4">Frontend Developer</h3>
+                    <p>
+                      Quando vidi un codice HTML per la prima volta pensai che
+                      non ci avrei mai lavorato, poi al primo stage dovuto
+                      imparare a scriverlo, scoprendo di esserci portata. Lavoro
+                      da sempre sulle pagine web, template, scrivo volentieri
+                      codice così e dal 2020 ho deciso di fare un passo in più
+                      iniziando a lavorare con JavaScript e poi React.
+                    </p>
+                    <div className="row mb-3">
+                      <div className="col-sm-6 py-2">
+                        <h6>
+                          Nome: <span className="fw-light">Elisa Resmini</span>
+                        </h6>
+                      </div>
+                      <div className="col-sm-6 py-2">
+                        <h6>
+                          Data di Nascita:{" "}
+                          <span className="fw-light">24 Febbraio 1984</span>
+                        </h6>
+                      </div>
+                      <div className="col-sm-6 py-2">
+                        <h6>
+                          Disponibilità lavorativa:{" "}
+                          <span className="fw-light">Milano- Lugano</span>
+                        </h6>
+                      </div>
+                      <div className="col-sm-6 py-2">
+                        <h6>
+                          Contratto:{" "}
+                          <span className="fw-light">
+                            Consulenza a tempo determinato / indeterminato{" "}
+                          </span>
+                        </h6>
+                      </div>
+                      <div className="col-sm-6 py-2">
+                        <h6>
+                          Disponibilità in sede:{" "}
+                          <span className="fw-light">Ibrido o full remote</span>
+                        </h6>
+                      </div>
+                      <div className="col-sm-6 py-2">
+                        <h6>
+                          Modalità organizzative:{" "}
+                          <span className="fw-light">Agile SCRUM </span>
+                        </h6>
+                      </div>
+                    </div>
+                    {/*<a href="/" className="btn btn-outline-primary mr-4">
+                      Hire Me
+                </a>*/}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Row>
+        </Container>
+      </div>
+
       <Container>
         <Row>
           {/* Qualification Start */}
@@ -15,12 +103,11 @@ export default function List() {
                   Education & Expericence
                 </h1>
               </div>
-              <div className="row align-items-center">
+              <div className="row">
                 <div className="col-lg-6">
                   <h3 className="mb-4">My Education</h3>
                   <div className="border-left border-primary pt-2 pl-4 ml-2">
                     <div className="position-relative mb-4">
-                      <i className="far fa-dot-circle text-primary position-absolute"></i>
                       <h5 className="font-weight-bold mb-1">Art Direction</h5>
                       <p className="mb-2">
                         <strong>IED - Istituto Europeo di Design Milano</strong>{" "}
@@ -33,7 +120,6 @@ export default function List() {
                       </p>
                     </div>
                     <div className="position-relative mb-4">
-                      <i className="far fa-dot-circle text-primary position-absolute"></i>
                       <h5 className="font-weight-bold mb-1">UX Designer</h5>
                       <p className="mb-2">
                         <strong>Fastweb Digital Academy</strong> |{" "}
@@ -42,7 +128,6 @@ export default function List() {
                       <p>Corso di aggiornamento con tool Figma</p>
                     </div>
                     <div className="position-relative mb-4">
-                      <i className="far fa-dot-circle text-primary position-absolute"></i>
                       <h5 className="font-weight-bold mb-1">React Front-end</h5>
                       <p className="mb-2">
                         <strong>Tree</strong> | <small>2021</small>
@@ -58,7 +143,6 @@ export default function List() {
                   <h3 className="mb-4">My Top Expericence</h3>
                   <div className="border-left border-primary pt-2 pl-4 ml-2">
                     <div className="position-relative mb-4">
-                      <i className="far fa-dot-circle text-primary position-absolute"></i>
                       <h5 className="font-weight-bold mb-1">
                         Junior Front-end
                       </h5>
@@ -72,7 +156,6 @@ export default function List() {
                       </p>
                     </div>
                     <div className="position-relative mb-4">
-                      <i className="far fa-dot-circle text-primary position-absolute"></i>
                       <h5 className="font-weight-bold mb-1">
                         Front-end developer
                       </h5>
@@ -92,6 +175,7 @@ export default function List() {
               </div>
             </div>
           </div>
+
           {/* End of Qualification  */}
         </Row>
 
@@ -111,9 +195,7 @@ export default function List() {
                   className="shadow rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
-                  <div className="my-4">
-                    <i className="lnr lnr-cog fs-40"></i>
-                  </div>
+                  <div className="my-4"></div>
                   <h4>Front-end Developer</h4>
                   <p>
                     Creazione di siti e app con JavaScript, React e JQuery.
@@ -129,9 +211,7 @@ export default function List() {
                   className="shadow rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
-                  <div className="my-4">
-                    <i className="lnr lnr-cog fs-40"></i>
-                  </div>
+                  <div className="my-4"></div>
                   <h4>Custom templates</h4>
                   <p>
                     Template personalizzati HTML5 + CSS3 per WordPress,
@@ -146,9 +226,7 @@ export default function List() {
                   className="shadow rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
-                  <div className="my-4">
-                    <i className="lnr lnr-cog fs-40"></i>
-                  </div>
+                  <div className="my-4"></div>
                   <h4>Newsletter Developer</h4>
                   <p>
                     Posso gestire le newsletter a livello UX + UI e developer.
@@ -165,9 +243,7 @@ export default function List() {
                   className="shadow rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
-                  <div className="my-4">
-                    <i className="lnr lnr-cog fs-40"></i>
-                  </div>
+                  <div className="my-4"></div>
                   <h4>Smart Work</h4>
                   <p>
                     Ho esperienza di AGILE SCRUM in team Vodafone e Smart Work
@@ -182,9 +258,7 @@ export default function List() {
                   className="shadow rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
-                  <div className="my-4">
-                    <i className="lnr lnr-cog fs-40"></i>
-                  </div>
+                  <div className="my-4"></div>
                   <h4>Bootstrap</h4>
                   <p>
                     Ho conoscenze di Bootstrap 5 e precedenti, Bootstrap Italia
@@ -199,9 +273,7 @@ export default function List() {
                   className="shadow rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
-                  <div className="my-4">
-                    <i className="lnr lnr-cog fs-40"></i>
-                  </div>
+                  <div className="my-4"></div>
                   <h4>Gestione CMS</h4>
                   <p>
                     Posso progettare ed installare un sito WordPress. Ho gestito
@@ -216,9 +288,7 @@ export default function List() {
                   className="shadow rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
-                  <div className="my-4">
-                    <i className="lnr lnr-cog fs-40"></i>
-                  </div>
+                  <div className="my-4"></div>
                   <h4>UX / UI Siti Web</h4>
                   <p>
                     Ti serve strutturare il tuo sito sencondo la visione di User

@@ -1,55 +1,49 @@
-import React from "react";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+
 function NavBar() {
   return (
-    <nav className="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-      <a href="index.html" className="navbar-brand ml-lg-3">
-        <h1 className="m-0 display-5">
-          <span className="text-primary">Free</span>Folio
-        </h1>
-      </a>
-      <button
-        type="button"
-        className="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-        <div className="navbar-nav m-auto py-0">
-          <a href="#home" className="nav-item nav-link active">
-            Home
-          </a>
-          <a href="#about" className="nav-item nav-link">
-            About
-          </a>
-          <a href="#qualification" className="nav-item nav-link">
-            Quality
-          </a>
-          <a href="#skill" className="nav-item nav-link">
-            Skill
-          </a>
-          <a href="#service" className="nav-item nav-link">
-            Service
-          </a>
-          <a href="#portfolio" className="nav-item nav-link">
-            Portfolio
-          </a>
-          <a href="#testimonial" className="nav-item nav-link">
-            Review
-          </a>
-          <a href="#blog" className="nav-item nav-link">
-            Blog
-          </a>
-          <a href="#contact" className="nav-item nav-link">
-            Contact
-          </a>
-        </div>
-        <a href="/" className="btn btn-outline-primary d-none d-lg-block">
-          Hire Me
-        </a>
-      </div>
-    </nav>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="/">Frontend Developer</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/curriculum">About me</Nav.Link>
+            <NavDropdown title="React" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="/list">
+                DRINK API REST | GET
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://react-trip-lombardy.netlify.app/">
+                TRAVEL WITH API
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://react-events-calendary.netlify.app/">
+                EVENTS
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://react-api-album.netlify.app/">
+                PHOTO ALBUM API
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://open-movies-database.netlify.app/">
+                OPEN MOVIES API - working progress
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://react-e-commerce-rayban.netlify.app/">
+                RAYBAN E-COMMERCE - working progress{" "}
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://react-users-github.netlify.app/">
+                USERS API - working progress{" "}
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://react-dark-mode-theme.netlify.app/">
+                DARK MODE THEME
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Nav>
+            <Nav.Link eventKey={2} href="/login">
+              Log-in
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
