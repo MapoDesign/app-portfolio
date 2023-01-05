@@ -11,18 +11,17 @@ export default function List() {
             <div className="container-fluid py-5" id="about">
               <div className="container">
                 <div className="position-relative d-flex align-items-center justify-content-center">
-                  {/*<h1
+                  <h1
                     className="display-1 text-uppercase"
                     style={{
                       textShadow: "0 0 5px #ffffff",
-                      color: "#113448",
+                      color: "#005190",
+                      fontWeight: "900",
                     }}
                   >
                     About
                   </h1>
-                  <h1 className="position-absolute text-uppercase text-primary">
-                    About Me
-                  </h1>*/}
+                  <h2 className="position-absolute text-white">About Me</h2>
                 </div>
                 <div className="row align-items-center">
                   <div className="col-lg-3 pb-4 pb-lg-0">
@@ -98,10 +97,19 @@ export default function List() {
           <div className="container-fluid py-5" id="qualification">
             <div className="container">
               <div className="position-relative d-flex align-items-center justify-content-center">
-                <h1 className="display-1 text-uppercase text-white">Quality</h1>
-                <h1 className="position-absolute text-uppercase text-primary">
-                  Education & Expericence
+                <h1
+                  className="display-1 text-uppercase"
+                  style={{
+                    textShadow: "0 0 5px #005190",
+                    color: "#ffffff",
+                    fontWeight: "900",
+                  }}
+                >
+                  Experience
                 </h1>
+                <h2 className="position-absolute text-primary">
+                  Experience & Education
+                </h2>
               </div>
               <div className="row">
                 <div className="col-lg-6">
@@ -181,8 +189,18 @@ export default function List() {
 
         <Row>
           {/* Section Title  */}
-          <div className="title-wrap mb-5" data-aos="fade-up">
-            <h2 className="section-title">Hard Skills</h2>
+          <div className="position-relative d-flex align-items-center justify-content-center">
+            <h1
+              className="display-1 text-uppercase"
+              style={{
+                textShadow: "0 0 5px #005190",
+                color: "#ffffff",
+                fontWeight: "900",
+              }}
+            >
+              Skills
+            </h1>
+            <h2 className="position-absolute text-primary">Hard Skills</h2>
           </div>
           {/* End of Section Title  */}
 
@@ -192,7 +210,7 @@ export default function List() {
               {/* Skills Item */}
               <div className="col-md-4 col-sm-12 text-center mt-4">
                 <div
-                  className="shadow rounded feature-item p-4 mb-4"
+                  className="shadow border rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
                   <div className="my-4"></div>
@@ -208,7 +226,7 @@ export default function List() {
               {/* Skills Item */}
               <div className="col-md-4 col-sm-12 text-center mt-4">
                 <div
-                  className="shadow rounded feature-item p-4 mb-4"
+                  className="shadow border rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
                   <div className="my-4"></div>
@@ -223,7 +241,7 @@ export default function List() {
               {/* Skills Item */}
               <div className="col-md-4 col-sm-12 text-center mt-4">
                 <div
-                  className="shadow rounded feature-item p-4 mb-4"
+                  className="shadow border rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
                   <div className="my-4"></div>
@@ -240,7 +258,7 @@ export default function List() {
               {/* Skills Item */}
               <div className="col-md-4 col-sm-12 text-center mt-4">
                 <div
-                  className="shadow rounded feature-item p-4 mb-4"
+                  className="shadow border rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
                   <div className="my-4"></div>
@@ -255,7 +273,7 @@ export default function List() {
               {/* Skills Item */}
               <div className="col-md-4 col-sm-12 text-center mt-4">
                 <div
-                  className="shadow rounded feature-item p-4 mb-4"
+                  className="shadow border rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
                   <div className="my-4"></div>
@@ -270,7 +288,7 @@ export default function List() {
               {/* Skills Item */}
               <div className="col-md-4 col-sm-12 text-center mt-4">
                 <div
-                  className="shadow rounded feature-item p-4 mb-4"
+                  className="shadow border rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
                   <div className="my-4"></div>
@@ -285,7 +303,7 @@ export default function List() {
               {/* Skills Item */}
               <div className="col-md-4 col-sm-12 text-center mt-4">
                 <div
-                  className="shadow rounded feature-item p-4 mb-4"
+                  className="shadow border rounded feature-item p-4 mb-4"
                   data-aos="fade-up"
                 >
                   <div className="my-4"></div>
