@@ -90,106 +90,119 @@ export default function List() {
           </Row>
         </Container>
       </div>
-
-      <Container>
-        <Row>
-          {/* Qualification Start */}
-          <div className="container-fluid py-5" id="qualification">
-            <div className="container">
-              <div className="position-relative d-flex align-items-center justify-content-center">
-                <h1
-                  className="display-1 text-uppercase"
-                  style={{
-                    textShadow: "0 0 5px #005190",
-                    color: "#ffffff",
-                    fontWeight: "900",
-                  }}
-                >
-                  Experience
-                </h1>
-                <h2 className="position-absolute text-primary">
-                  Experience & Education
-                </h2>
-              </div>
-              <div className="row">
-                <div className="col-lg-6">
-                  <h3 className="mb-4">My Education</h3>
-                  <div className="border-left border-primary pt-2 pl-4 ml-2">
-                    <div className="position-relative mb-4">
-                      <h5 className="font-weight-bold mb-1">Art Direction</h5>
-                      <p className="mb-2">
-                        <strong>IED - Istituto Europeo di Design Milano</strong>{" "}
-                        | <small>2005 - 2008</small>
-                      </p>
-                      <p>
-                        Ho imparato le basi dei User Experience, Psicologia
-                        della Comunicazione e Cognitivismo, Programmazione
-                        ActionScript3
-                      </p>
-                    </div>
-                    <div className="position-relative mb-4">
-                      <h5 className="font-weight-bold mb-1">UX Designer</h5>
-                      <p className="mb-2">
-                        <strong>Fastweb Digital Academy</strong> |{" "}
-                        <small>2020</small>
-                      </p>
-                      <p>Corso di aggiornamento con tool Figma</p>
-                    </div>
-                    <div className="position-relative mb-4">
-                      <h5 className="font-weight-bold mb-1">React Front-end</h5>
-                      <p className="mb-2">
-                        <strong>Tree</strong> | <small>2021</small>
-                      </p>
-                      <p>
-                        Corso 240 ore con certificazione. Conoscenze acquisite
-                        sull'utilizzo di GIT e React.
-                      </p>
+      <div
+        className="shadow-sm"
+        style={{
+          backgroundColor: "#f7f7f7",
+          borderBottom: "2px dotted #005190",
+        }}
+      >
+        <Container>
+          <Row>
+            {/* Qualification Start */}
+            <div className="container-fluid py-5" id="qualification">
+              <div className="container">
+                <div className="position-relative d-flex align-items-center justify-content-center">
+                  <h1
+                    className="display-1 text-uppercase"
+                    style={{
+                      textShadow: "0 0 5px #005190",
+                      color: "#ffffff",
+                      fontWeight: "900",
+                    }}
+                  >
+                    Experience
+                  </h1>
+                  <h2 className="position-absolute text-primary">
+                    Experience & Education
+                  </h2>
+                </div>
+                <div className="row">
+                  <div className="col-lg-6">
+                    <h3 className="mb-4">My Education</h3>
+                    <div className="border-left border-primary pt-2 pl-4 ml-2">
+                      <div className="position-relative mb-4">
+                        <h5 className="font-weight-bold mb-1">Art Direction</h5>
+                        <p className="mb-2">
+                          <strong>
+                            IED - Istituto Europeo di Design Milano
+                          </strong>{" "}
+                          | <small>2005 - 2008</small>
+                        </p>
+                        <p>
+                          Ho imparato le basi dei User Experience, Psicologia
+                          della Comunicazione e Cognitivismo, Programmazione
+                          ActionScript3
+                        </p>
+                      </div>
+                      <div className="position-relative mb-4">
+                        <h5 className="font-weight-bold mb-1">UX Designer</h5>
+                        <p className="mb-2">
+                          <strong>Fastweb Digital Academy</strong> |{" "}
+                          <small>2020</small>
+                        </p>
+                        <p>Corso di aggiornamento con tool Figma</p>
+                      </div>
+                      <div className="position-relative mb-4">
+                        <h5 className="font-weight-bold mb-1">
+                          React Front-end
+                        </h5>
+                        <p className="mb-2">
+                          <strong>Tree</strong> | <small>2021</small>
+                        </p>
+                        <p>
+                          Corso 240 ore con certificazione. Conoscenze acquisite
+                          sull'utilizzo di GIT e React.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-lg-6">
-                  <h3 className="mb-4">My Top Expericence</h3>
-                  <div className="border-left border-primary pt-2 pl-4 ml-2">
-                    <div className="position-relative mb-4">
-                      <h5 className="font-weight-bold mb-1">
-                        Junior Front-end
-                      </h5>
-                      <p className="mb-2">
-                        <strong>Vodafone (Alkemy)</strong> | <small>2018</small>
-                      </p>
-                      <p>
-                        Creazione codice delle pagine per l'e-commerce sezione
-                        linea fissa. Creazione del codice per le newsletter
-                        interne ai dipendenti sezione Happy Friday.
-                      </p>
-                    </div>
-                    <div className="position-relative mb-4">
-                      <h5 className="font-weight-bold mb-1">
-                        Front-end developer
-                      </h5>
-                      <p className="mb-2">
-                        <strong>Innonation</strong> | <small>2022</small>
-                      </p>
-                      <p>
-                        Progetti per la pubblica amministrazione. Realizzazione
-                        codice di dashboard per l'utente su Vue o Django.
-                        Miglioramento UX del flow di registrazione e
-                        rinfrescamento della UI per un progetto di registrazione
-                        e profilo SPID.
-                      </p>
+                  <div className="col-lg-6">
+                    <h3 className="mb-4">My Top Expericence</h3>
+                    <div className="border-left border-primary pt-2 pl-4 ml-2">
+                      <div className="position-relative mb-4">
+                        <h5 className="font-weight-bold mb-1">
+                          Junior Front-end
+                        </h5>
+                        <p className="mb-2">
+                          <strong>Vodafone (Alkemy)</strong> |{" "}
+                          <small>2018</small>
+                        </p>
+                        <p>
+                          Creazione codice delle pagine per l'e-commerce sezione
+                          linea fissa. Creazione del codice per le newsletter
+                          interne ai dipendenti sezione Happy Friday.
+                        </p>
+                      </div>
+                      <div className="position-relative mb-4">
+                        <h5 className="font-weight-bold mb-1">
+                          Front-end developer
+                        </h5>
+                        <p className="mb-2">
+                          <strong>Innonation</strong> | <small>2022</small>
+                        </p>
+                        <p>
+                          Progetti per la pubblica amministrazione.
+                          Realizzazione codice di dashboard per l'utente su Vue
+                          o Django. Miglioramento UX del flow di registrazione e
+                          rinfrescamento della UI per un progetto di
+                          registrazione e profilo SPID.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* End of Qualification  */}
-        </Row>
-
+            {/* End of Qualification  */}
+          </Row>
+        </Container>
+      </div>
+      <Container>
         <Row>
           {/* Section Title  */}
-          <div className="position-relative d-flex align-items-center justify-content-center">
+          <div className="position-relative d-flex align-items-center justify-content-center py-5">
             <h1
               className="display-1 text-uppercase"
               style={{
