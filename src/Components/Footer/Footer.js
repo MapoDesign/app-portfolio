@@ -13,10 +13,9 @@ function Footer() {
                 <h4>Few Words About Me</h4>
                 <p className="white">
                   Mi chiamo Elisa Resmini. Ho la passione della programmazione e
-                  lavoro su React come Front-end Developer. Avendo una
-                  formazione di UX UI designer, ho più occhio critico dei miei
-                  colleghi e creo template davvero belli da vedere e funzionali
-                  in termini di User Experience.
+                  lavoro su React come Front-end Developer. Avendolo fatto da
+                  tutta la vita, ho più occhio allenato a creare template belli
+                  e funzionali in termini di User Experience.
                 </p>
               </div>
             </div>
