@@ -27,7 +27,7 @@ export default function List() {
                 <div className="row align-items-center">
                   <div className="col-lg-3 pb-4 pb-lg-0">
                     <img
-                      className="img-fluid rounded w-100"
+                      className="img-fluid rounded-circle w-100 p-4"
                       src={logo}
                       alt=""
                     />
