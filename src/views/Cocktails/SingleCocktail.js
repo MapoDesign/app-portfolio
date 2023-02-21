@@ -95,6 +95,7 @@ function SingleCocktail() {
                       </li>
                     );
                   }
+                  return <></>;
                 })}
               </ul>
             </div>

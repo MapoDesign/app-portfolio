@@ -1,5 +1,4 @@
 import "./Curriculum.css";
-import logo from "../../img/ElisaResmini.jpg";
 import Hero from "../../Components/Hero/Hero";
 import image from "../../assets/images/hero-coding.jpg";
 import { skillsCard } from "../../utils/info";
