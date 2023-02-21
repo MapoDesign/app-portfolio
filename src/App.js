@@ -1,18 +1,11 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import BrowserRouter from "./Components/Routes/BrowserRouter";
+import { useGlobalContext } from "./context";
 
 function App() {
-  return (
-    <div
-      className="App"
-      data-spy="scroll"
-      data-target=".navbar"
-      data-offset="51"
-    >
-      <BrowserRouter />
-    </div>
-  );
+  const prova = useGlobalContext();
+  console.log(prova);
+
+  return <BrowserRouter />;
 }
 
 export default App;
