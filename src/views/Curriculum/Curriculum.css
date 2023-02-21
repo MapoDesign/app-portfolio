@@ -1,0 +1,101 @@
+/*
+====================
+ABOUTSCREEN STYLE
+====================
+*/
+
+.about-value {
+    margin: 0 auto;
+    background-color: var(--extra-light-gray);
+  }
+  .about-value-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: -moz-grid;
+    display: -ms-grid;
+    display: -webkit-grid;
+    display: grid;
+    gap: 2rem;
+  }
+  .about-value h3.brand-secondary-color {
+    text-align: center;
+  }
+  .card-section {
+    display: -moz-grid;
+    display: -ms-grid;
+    display: -webkit-grid;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+  }
+  
+  .about-team {
+    margin: 0 auto;
+    background-color: white;
+  }
+  
+  .about-team .team-img {
+    position: relative;
+    height: 70vh;
+  }
+  
+  .about-team .team-img::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100.1%;
+    background-color: white;
+    height: 15vh;
+    clip-path: polygon(100% 40%, -40% 110%, 100% 100%);
+  }
+  
+  .about-team-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: -moz-grid;
+    display: -ms-grid;
+    display: -webkit-grid;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+  }
+  
+  @media screen and (min-width: 753px) {
+    .about-team .team-img::before {
+      clip-path: polygon(100% 10%, -20% 100%, 100% 100%);
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .about-value {
+      margin: 0rem auto;
+    }
+  
+    .about-team .team-img::before {
+      clip-path: polygon(100% 0, -50% 130%, 100% 100%);
+    }
+  
+    .about-value-content {
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+      gap: 3rem;
+    }
+    .card-section {
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: unset;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .about-team-content .card-section {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      flex-wrap: wrap;
+    }
+  }
+  
+  /*
+  ====================
+  END ABOUTSCREEN STYLE
+  ====================
+  */
