@@ -1,16 +1,14 @@
-import { Container, Row } from "react-bootstrap";
 import SignUpForm from "../../Components/Form/signUpForm";
+import useTitle from "../../useTitle";
 
-export default function List(){
-    return <Container>
-        <Row>
-            <h1>Login</h1>
-            </Row>    
-        
-        
-        <Row>
-            <SignUpForm />    
-        </Row>
-        
-    </Container>
+export default function List() {
+  useTitle("Test login");
+
+  return (
+    <div className="container">
+      <h1>Login</h1>
+
+      <SignUpForm />
+    </div>
+  );
 }

@@ -3,8 +3,10 @@ import Hero from "../../Components/Hero/Hero";
 import image from "../../assets/images/hero-coding.jpg";
 import { skillsCard } from "../../utils/info";
 import Card from "../../Components/Card/Card";
+import useTitle from "../../useTitle";
 
 export default function List() {
+  useTitle("Curriculum");
   return (
     <>
       <Hero img={image}>

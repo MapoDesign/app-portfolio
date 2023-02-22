@@ -1,7 +1,10 @@
 import Hero from "../../Components/Hero/Hero";
 import image from "../../assets/images/hero-coding.jpg";
+import useTitle from "../../useTitle";
 
 export default function Home() {
+  useTitle("Elisa Resmini");
+
   return (
     <>
       <Hero img={image}>

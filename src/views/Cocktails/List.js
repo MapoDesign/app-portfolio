@@ -7,8 +7,11 @@ import { useGlobalContext } from "../../context";
 import ErrorMessage from "../../Components/Messages/ErrorMessage";
 import Cocktails from "../../Components/Cocktails/Cocktails";
 import Loading from "../../Components/Loading/Loading";
+import useTitle from "../../useTitle";
 
 export default function List() {
+  useTitle("Lista dei drink");
+
   const {
     query,
     isLoading,
