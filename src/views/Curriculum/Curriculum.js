@@ -22,7 +22,7 @@ export default function List() {
         </section>
       </Hero>
 
-      <section className="about-value">
+      <section className="about-value section-container">
         <div className="container about-value-content">
           <h3>Le mie hard Skills</h3>
           <div className="card-section">

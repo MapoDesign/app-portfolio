@@ -56,7 +56,7 @@ export default function List() {
           </div>
         </div>
       </Hero>
-      <section className="container home-screen">
+      <section className="container home-screen section-container">
         <h1>Drinks list</h1>
         <div className="search-bar">
           <div className="form-container">
